@@ -158,6 +158,8 @@ render() {
       </div>
 
       <div>
+
+        {/* This is the purchase module: It's not currently running on the site hence why it's blocked out. */}
         {/* <div>
 
           <PurchaseModule
