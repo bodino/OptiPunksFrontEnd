@@ -5,36 +5,67 @@ import MarketGrid from "./MarketGrid"
 
 
 
-export function MarketBox() {
+export function MarketBox({findUsersnfts}) {
 
   const [items, setItems] = useState([])
   const [isLoading, setIsLoading] = useState(true)
   const [query, setQuery] = useState('')
+  const [show, setShow] = useState(false);
+
+  var result = [];
+
+  
+
+  const getData = async () => {
+    setIsLoading(true)
+    result = await findUsersnfts();
+    setItems(result);
+    // console.log(result);
+    console.log(result);
+   // setItems(result.data)
+   setIsLoading(false)
+  }
+
 
   useEffect(() => {
     const fetchItems = async () => {
-      setIsLoading(true)
-      const result = await axios(
-        `https://strapi-matic.poly.market/markets?_limit=-1&closed=false&active=true&market_type=normal`
-      )
+      
+      // const result = await findUsersnfts();
 
-      console.log("goodbye")
+      // console.log(result);
 
-      setItems(result.data)
-      setIsLoading(false)
+     // setItems(result.data)
+     
     }
 
     fetchItems()
   }, [])
 return (
     
-    <div className="container123">
-      
-      <MarketGrid isLoading={isLoading} items={items} />
+<div>
+  <div className ="css-1qqp0n5v3"> 
     
-    </div>
 
+  <MarketGrid isLoading={isLoading} items={items} /> 
+
+
+  <div onClick={() => {result = getData(); }} className="css-5n3810v2" show={isLoading}>
+        <a  className="rainbowlogintextinverse" >
+        {isLoading ?  "Show My Nfts" : "Refresh"}
+
+        </a>        
+      </div>
+      <div className ="css-1qqp0n5v4">
+      Unofficial punks project unaffiliated with OptimismPBC
+
+    </div>  
+     
+    </div>
+    
+
+  </div>
 );
+  
 
 }
 

@@ -35,9 +35,10 @@ export function MyModal({connectWallet,selectedAddress}) {
   return (
 
       
-    <div className="css-5n3810 ">
+    <a className="css-5n3810 ">
         <a onClick={handleShow} className="rainbowlogintext" >
-            {status ? "Connected" : "Click to Connect"}
+            {status ?  "Connected" : "Click to Connect"}
+            
         </a>
         <Modal className ="css-pisauv" show={show} onHide={handleClose} animation={false} centered={true}>
           <div className="css-1qqp0n4">
@@ -62,12 +63,12 @@ export function MyModal({connectWallet,selectedAddress}) {
                                 <p class="chakra-text css-1dvms1e">MetaMask</p>
                             
                         </button>
-                        <button type="button" class="chakra-button css-m7jr6f">
+                        {/* <button type="button" class="chakra-button css-m7jr6f">
                            
                                 <img alt="WalletConnect" class="chakra-image css-mxtfqv" src={walletConnectIcon}></img>
                                 <p class="chakra-text css-1dvms1e">WalletConnect</p>
                           
-                        </button>
+                        </button> */}
                         {/* <button type="button" class="chakra-button css-m7jr6f">
                             <div class="css-7pf6at">
                                 <img alt="Coinbase Wallet" class="chakra-image css-mxtfqv" src="./static/media/coinbaseWalletIcon.62578f59.svg"></img>
@@ -87,7 +88,7 @@ export function MyModal({connectWallet,selectedAddress}) {
          
           </div>
         </Modal>
-    </div>
+    </a>
   );    
 }
 

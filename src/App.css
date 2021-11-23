@@ -20,9 +20,11 @@
  position: relative;
  display: flex;
  flex-direction: row;
- justify-content: center;
+ justify-content: space-evenly;
+ align-items: center;
+ flex-wrap: wrap;
 
-height: 83px;
+min-height: 83px;
 left: 0px;
 top: 0px; 
 
@@ -44,7 +46,7 @@ svg .rainbowFill {
 }
 
 .css-5n3810 {
-  position: relative;
+  
   display: flex;
   appearance: none;
   text-decoration: none;
@@ -53,7 +55,7 @@ svg .rainbowFill {
   -webkit-box-pack: right;
   justify-content: center;
   align-self: center;
-  left: 25%;
+
   white-space: nowrap;
   vertical-align: middle;
   align-items: center;
@@ -77,6 +79,140 @@ svg .rainbowFill {
   border-style: solid;
   transition: all 250ms ease 0s;
   border-color: #f01a37;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.sizingv2 {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
+.css-5n3810v2 {
+  position: relative;
+  display: flex;
+  appearance: none;
+  min-height: 2.5rem;
+  text-decoration: none;
+  flex-direction: row;
+ justify-content: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-self: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  align-items: center;
+  text-align: center;
+  outline-offset: 2px;
+  width: auto;
+  line-height: 1.2;
+  
+  font-weight: 400;
+  height: 2.5rem;
+  width: 9.2rem;
+  font-size: 0.75rem;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  outline: transparent solid 2px;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  transition: all 250ms ease 0s;
+  border-color: #ffffff;
+}
+
+.css-5n3810v3 {
+  position: relative;
+  display: flex;
+  appearance: none;
+  text-decoration: none;
+  flex-direction: row;
+ justify-content: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-self: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  align-items: center;
+  text-align: center;
+  outline-offset: 2px;
+  width: auto;
+  top: -495px;
+  line-height: 1.2;
+  
+  font-weight: 400;
+  height: 2.5rem;
+  margin-top: -2.5rem;
+  
+  font-size: 0.75rem;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+  cursor: pointer;
+  color: #1b1b1b;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  outline: transparent solid 2px;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  transition: all 250ms ease 0s;
+  border-color: #ffffff;
+
+}
+
+.imgholder {
+  padding: 5px;
+  border-radius: 10%;
+}
+.punkgifv2 {
+  padding-bottom: 3.5rem;
+  position: relative;
+  text-align: center;
+  top: 20px;
+ 
+
+
+  border-radius: 10%;
+  justify-content: center;
+}
+.css-1qqp0n5v3 {
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  background:linear-gradient(#f01a37, rgb(77, 13, 13));
+  border-radius: 10px;
+  border-color: red;
+  border-width: 10px ;
+
+}
+.fontsizesmall{
+  font-size: 12px ;
+  color: white;
+  margin-top: 5px;
+
+}
+
+.css-1qqp0n5v4 {
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  border-width: 10px ;
+  font-size: 12px ;
+  color: white;
+
 }
 .css-n6x0i2 {
   
@@ -98,18 +234,21 @@ svg .rainbowFill {
 
 
 .css-1c7st4f {
-  position: absolute;
-
-  top: 7px;
-  cursor: pointer;
-  outline: transparent solid 2px;
-  outline-offset: 2px;
   color: #FF0420;
   font-style: italic;
   font-weight: 500;
   text-decoration: none !important;
+  align-self: center;
 }
-
+.sizing {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  height: 60px;
+  width: 147.19px;
+  padding-left: 50px;
+}
 .rainbowText {
   
   background-clip: text;
@@ -128,7 +267,42 @@ svg .rainbowFill {
   color: #FFFFFF;
   font-weight: 400;
   align-items: center;
+
+
 }
+
+.quantityInput__3YZli {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  max-width: 9.2rem;
+  max-height: 2.5rem;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 0;
+  margin: 10px ;
+  padding: 13px 16px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.rainbowlogintextinverse {
+  background-clip: text;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  transition: all 250ms ease 0s;
+  -webkit-background-clip: text;
+  color: #FF0420;
+  font-weight: 400;
+  align-items: center;
+
+
+}
+
+
 body {
   background-image:  url("https://gateway.optimism.io/static/media/bg-grid-dark.6ce462f7.svg"),url("backgroundreal.svg")  ;
   background-size: contain;
@@ -194,9 +368,26 @@ a {
 .css-1qqp0n5 {
   
   max-width: 500px;
-  height: 450px;
+  height: 440px;
   margin: auto;
- 
+  margin-top: 1rem;
+  padding: 1rem;
+  background:linear-gradient(#f01a37, rgb(77, 13, 13));
+  border-radius: 10px;
+  border-color: red;
+  border-width: 10px ;
+}
+
+.css-1qqp0n5v2 {
+  
+  max-width: 500px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  margin-top: 1rem;
   padding: 1rem;
   background:linear-gradient(#f01a37, rgb(77, 13, 13));
   border-radius: 10px;
